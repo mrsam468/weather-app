@@ -1,0 +1,105 @@
+body{
+background-color:#383838;
+padding:50px;
+}
+nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between
+}
+.picture-button{
+    width:100px;
+    /* height:36.61px; */
+    /* margin-top:63px; */
+    /* margin-left:78px; */
+    border-radius:40px;
+    border-style:none;
+    /* color:#D9D9D9; */
+    background-color:#D9D9D9;
+}
+.picture-button img{
+    width:30px;
+    height:30px;
+    margin-top:6px;
+    margin-left:50px;
+}
+.Dark-mood{
+    width:107px;
+    height:17px;
+    /* margin-top:107px; */
+    /* margin-left:80px; */
+}
+.Dark-mood p{
+    font-family:poppins ,Arial, Helvetica, sans-serif;
+    font-size:18px;
+    font-weight:800px;
+    line-height:27px;
+    color:#D9D9D9;
+
+}
+.search-icon{
+    width:40px;
+    height:46px;
+    margin-top:12px;
+    margin-left:29px;
+
+    position:absolute;
+    z-index: 1;
+
+}
+.search-bar{
+    position:relative;
+    width:803px;
+    height:62px;
+    /* margin-top:63px; */
+    /* margin-left:259px; */
+    border-radius:40px;
+    background-color:#444444;
+    border:none;
+    padding-left:100px;
+    color:white;
+    text-transform: capitalize;
+    font-size:18px;
+}
+.search-bar::placeholder{
+    width:621px;
+    height:28px;
+    margin-top:86px;
+    margin-left:100px;
+    font-family:poppins,arial;
+    font-weight:400px;
+    font-size:18px;
+    line-height: 27px;
+    color:#ffffff 60%;
+}
+.current-location{
+    display:flex;
+    align-items: center;
+    width:292px;
+    height:62px;
+    /* margin-top:63px; */
+    /* margin-left:1143px; */
+    border-radius:40px;
+    background-color: #4cbb17;
+    justify-content: space-around;
+    border:none;
+}
+.current-location img{
+    width:35px;
+    height:35px;
+    /* margin-top:62px; */
+    /* margin-left:1168px; */
+}
+.current-location p{
+    /* width:20px; */
+    height:62px;
+    color:#ffffff;
+    margin-top:45px;
+    /* margin-left:1207px; */
+    font-family: poppins,arial;
+    font-weight:800px;
+    font-size:22px;
+    line-height:33px;
+    text-align: center;
+    
+}
