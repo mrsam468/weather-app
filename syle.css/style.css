@@ -7,10 +7,14 @@ body{
         align-items:center;
         justify-content:space-between
     }
+    .left-section{
+        margin-top:4px;
+        margin-right: 6px;;
+    }
     .picture-button{
         width:100px;
         /* height:36.61px; */
-        /* margin-top:63px; */
+        margin-top:20px;
         /* margin-left:78px; */
         border-radius:40px;
         border-style:none;
@@ -26,7 +30,7 @@ body{
     .Dark-mood{
         width:107px;
         height:17px;
-        /* margin-top:107px; */
+        /* margin-top:107px;/ */
         /* margin-left:80px; */
     }
     .Dark-mood p{
@@ -171,5 +175,5 @@ body{
     .first-section{
         display:flex;
         justify-content: space-between;
-        align-items: center;;
+        align-items: center;
     }
