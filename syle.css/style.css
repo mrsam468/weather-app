@@ -179,15 +179,19 @@ body{
         opacity:80%;
     }
     .div-container{
+        display: flex;
         width:780px;
         background-color:#444444 ;
         box-shadow:5px 5px 10px #000000;
         height:330px;
         border-radius: 30px;
+        align-items: center;
+        justify-content: space-between;
         /* padding:20px; */
         /* padding-top:0px; */
         margin-bottom:-65px;
         /* box-sizing: border-box; */
+
     }
     .first-section{
         display:flex;
@@ -197,4 +201,24 @@ body{
     .sunrise{
         margin-top:35px;
         width:153.15px;
+    }
+    .sunny-image{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .the-sunny-image{
+        width:270px;
+        margin-top:-8px;
+    }
+    .type-of-weather{
+        font-family:poppins,arial;
+        font-weight:600px;
+        font-size:32px;
+        line-height:48px;
+        text-align: center;
+        margin-top:-10px;
+        color:#ffffff;
+
     }
