@@ -246,16 +246,16 @@ body{
         align-items:center;
         gap:30px;
     }
-    .humidity-picture{
+    /* .humidity-picture{ */
         /* margin-left:-62px; */
-    }
+    /* } */
     .wind{
         /* display:flex; */
         flex:1;
     }
-    .pressure-pic{
+    /* .pressure-pic{
         /* margin-left:-62px; */
-    }
+    /* } */ */
     /* .uv-white{
         display:flex;
         flex-direction: column;
