@@ -1,6 +1,7 @@
 body{
-    background-color:#383838;
+    background:linear-gradient(to right,#444444 ,#3f3c3c );
     padding:50px;
+    color:#ffffff;
     }
     nav{
         display:flex;
@@ -110,6 +111,7 @@ body{
         
     }
     .athens{
+        padding:35px;
         width:510px;
         height:330px;
         margin-top:80px;
@@ -150,6 +152,7 @@ body{
         margin-left:10px;
         justify-content:space-between;
         flex:1;
+        /* padding:40px; */
         /* align-items: center; */
     }
     .sunrise{
@@ -192,9 +195,10 @@ body{
         border-radius: 30px;
         align-items: center;
         justify-content: space-between;
-        /* padding:20px; */
+        padding:35px;
         /* padding-top:0px; */
         margin-bottom:-65px;
+        /* overflow:hidden; */
         /* box-sizing: border-box; */
 
     }
@@ -298,4 +302,62 @@ body{
         .uv{
             /* margin-right:-12px; */
             text-align: center;
+        }
+        .weather-forecast{
+            display:flex;
+            flex-direction: column;
+            /* align-items: center; */
+            /* justify-content: space-between; */
+            width:414px;
+            height:366px;
+            border-radius: 30px;
+            color:#444444;
+            box-shadow:5px 5px 10px #000000;
+            margin-top:50px;
+            padding:50px;
+        }
+        .section-two{
+            display:flex;
+            align-items:center;
+            justify-content: space-between;
+            gap:50px;
+            padding:50px;
+        }
+        .first-weather-forecast{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            /* gap:20px; */
+            color:white;
+            margin-top:-8px;
+        }
+        .five-days-forecast{
+            color:#ffffff;
+            font-family:poppins,arial;
+            font-weight: 700px;
+            font-size:32px;
+            line-height:48px;
+            text-align:center;
+            margin-top:-28px;
+        }
+        .degree{
+            font-family: poppins,arial;
+            font-weight: 600px;
+            font-size:24px;
+            line-height:36px;
+            text-align: center;
+        }
+        .friday{
+            font-family: poppins,arial;
+            font-weight: 600px;
+            font-size:20px;
+            line-height:30px;
+            text-align: center;
+        }
+        .hourly{
+            width:870px;
+            height:366px;
+            border-radius:30px;
+            color:#444444;
+            box-shadow: 5px 5px 10px #000000;
         }
