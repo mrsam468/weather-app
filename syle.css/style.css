@@ -448,8 +448,9 @@ body{
             }
             .picture-button{
                 flex:1;
-                width:30px;
-                border-radius: 15px;
+                width:40px;
+                border-radius:20px;
+                margin-left:12px;
             }
             .picture-button img{
                 width:10px;
@@ -457,6 +458,7 @@ body{
             }
             .Dark-mood p{
                 font-size:12px;
+                margin-left:15px;
                 align-items:center;
             }
             .Dark-mood span{
@@ -489,7 +491,7 @@ body{
                 flex-shrink: 1;
                 height:15px;
                 /* background-color:red; */
-                margin-left:20px;
+                margin-left:15px;
             }
             .current-location img{
                 width:20px;
@@ -512,9 +514,11 @@ body{
             }
             .athens{
                 width:250px;
+                padding:0px;
             }
             .div-container{
                 width:300px;
+                padding:10px;
                 /* height:400px; */
             }
             .feel-like{
@@ -547,7 +551,7 @@ body{
             }
             .humidity p{
                 text-align: center;
-                font-size:13px;
+                font-size:10px;
             }
             .section-two{
                 display:flex;
@@ -558,10 +562,19 @@ body{
             .weather-forecast{
                 width:250px;
                 height:600px;
+                padding:12px;
             }
             .hourly{
                 width:300px;
+                padding:12px;
             }
             .hourly-box{
-                width:60px;}
+                width:40px;}
+                .hourly-box img{
+                    width:30px;
+                    height:auto
+                }
+                .hourly-box p{
+                    font-size:8px;
+                }
         }
