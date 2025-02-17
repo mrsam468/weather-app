@@ -416,3 +416,60 @@ body{
         .second-nav-pic{
             transform:rotate(25deg)
         }
+        @media screen and (max-width:765px) {
+            body{
+                padding:20px;
+                /* align-items:center; */
+                /* margin:auto; */
+            }
+            .picture-button{
+                width:80px;
+            }
+            .picture-button img{
+                width:20px;
+                /* margin-left:; */
+            }
+            .Dark-mood p{
+                font-size:12px;
+                align-items:center;
+            }
+            .search-icon{
+                width:30px;
+                height:30px;
+            }
+            .search-bar{
+                width:250px;
+                font-size:14px;
+            }
+            .search-bar::placeholder{
+                font-size:12px;
+            }
+            .current-location{
+                width:200px;
+                margin-left:20px;
+            }
+            .current-location img{
+                width:20px;
+                margin-left:-12px;
+            }
+            .current-location p{
+                font-size:15px;
+                font-weight: 700px;
+            }
+            .first-section{
+                display:flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                /* padding:auto; */
+            }
+            .athens{
+                width:300px;
+            }
+            .div-container{
+                width:380px;
+            }
+            .feel-like{
+                width:20x;
+            }
+        }
