@@ -206,6 +206,7 @@ body{
         display:flex;
         justify-content: space-between;
         align-items: center;
+        gap:25px;
     }
     .sunrise{
         margin-top:35px;
@@ -355,9 +356,63 @@ body{
             text-align: center;
         }
         .hourly{
+            display:flex;
+            justify-content: center;
+            padding:40px;
+            /* gap:18px; */
+            flex-direction: column;
+            align-items:center;
             width:870px;
             height:366px;
             border-radius:30px;
             color:#444444;
             box-shadow: 5px 5px 10px #000000;
+        }
+        .hourly p{
+            color:#ffffff;
+            font-weight:700px;
+            font-size:32px;
+            font-family:poppins,arial;
+            line-height:48px;
+            text-align: center;
+            
+        }
+        .hourly-box{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width:130px;
+            height:270px;
+            border-radius: 40px;
+            background-color:#373636;
+            gap:-12px;
+        }
+        .hourly-container{
+            display:flex;
+            /* flex-direction:column; */
+            justify-content: space-between;
+            align-items: center;
+            gap:20px;
+            padding:10px;
+        }
+        .hourly-box img{
+            width:55px;
+            height:55px;
+            margin-top:-12px;
+        }
+        .hourly-box p{
+            font-family: poppins,arial;
+            font-weight:400px;
+            font-size:20px;
+            margin-top:-10px;
+        }
+        .hourly-time{
+            margin-top:10px;
+        }
+        .first-nav-pic{
+            transform:rotate(-25deg);
+        }
+        .second-nav-pic{
+            transform:rotate(25deg)
         }
