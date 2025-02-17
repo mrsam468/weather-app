@@ -418,11 +418,15 @@ body{
         }
         @media screen and (max-width:765px) {
             body{
-                padding:20px;
+                overflow-x:hidden;
                 /* align-items:center; */
                 /* margin:auto; */
             }
+            nav{
+                display:flex;
+            }
             .picture-button{
+                flex:1;
                 width:80px;
             }
             .picture-button img{
@@ -435,25 +439,30 @@ body{
             }
             .search-icon{
                 width:30px;
-                height:30px;
+                /* height:30px; */
             }
             .search-bar{
-                width:250px;
+                flex:1;
+                flex-shrink:1;
+               max-width:200px;
                 font-size:14px;
             }
             .search-bar::placeholder{
                 font-size:12px;
             }
             .current-location{
-                width:200px;
+               max-width:200px;
+               flex:1;
                 margin-left:20px;
+                flex-shrink: 1;
             }
             .current-location img{
                 width:20px;
-                margin-left:-12px;
+                /* margin-left:-12px; */
             }
             .current-location p{
-                font-size:15px;
+                font-size:12px;
+                text-align: center;
                 font-weight: 700px;
             }
             .first-section{
@@ -461,6 +470,8 @@ body{
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
+                margin-left:250px;
+                margin-right:350px;
                 /* padding:auto; */
             }
             .athens{
@@ -468,8 +479,48 @@ body{
             }
             .div-container{
                 width:380px;
+                /* height:400px; */
             }
             .feel-like{
-                width:20x;
+                /* width:20px; */
+                justify-content: space-between;
+                /* gap:20px; */
             }
+            .deg{
+                font-size:24px;
+            }
+            .feels{
+                font-size:12px;
+                margin-top:90px;
+            }
+            .feels span{
+                font-size:18px;
+            }
+            .sunrise{
+                width:80px;
+            }
+            .the-sunny-image{
+                width:100px;
+                /* height:200px; */
+            }
+            .type-of-weather{
+                font-size:21px;
+            }
+            .wind img{
+                width:40px;
+            }
+            .section-two{
+                display:flex;
+                flex-direction:column;
+                margin-left:250px;
+                margin-right:400px;
+            }
+            .weather-forecast{
+                width:300px;
+            }
+            .hourly{
+                width:320px;
+            }
+            .hourly-box{
+                width:60px;}
         }
