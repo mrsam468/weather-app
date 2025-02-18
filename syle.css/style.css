@@ -472,7 +472,7 @@ body{
             .search-bar{
                 flex:1;
                 flex-shrink:1;
-               max-width:100px;
+               max-width:115px;
                 font-size:14px;
                 height:32px;
                 margin-left: -30px;
