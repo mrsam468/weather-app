@@ -581,6 +581,11 @@ body{
                 }
         }
         @media screen and (min-width:766px) {
+            html,body{
+                margin:0px;
+                padding:5px;
+                overflow-x: hidden;
+            }
             .middle-section{
                 /* width:100px; */
             }
