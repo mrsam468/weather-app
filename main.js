@@ -35,7 +35,7 @@ function onclick(e) {
 }
 let weather = {
   apikey: "c357478e01d646558ef205232252705 ",
-  baseurl: " http://api.weatherapi.com/v1",
+  baseurl: " https://api.weatherapi.com/v1",
   fetchWeather: function (city) {
     // fetch(this.baseurl + "/current.json?key=" + this.key + "&q=" + city);
 
