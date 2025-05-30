@@ -12,7 +12,7 @@ const feel_like = document.querySelector(".deg");
 const feel = document.querySelector(".feels");
 const sunrise = document.querySelector(".sunrise");
 const sunny = document.querySelector(".type-of-weather");
-const the_image=document.querySelector(".the-sunny-image" );
+const the_image = document.querySelector(".the-sunny-image");
 
 btn.addEventListener("click", onclick);
 function onclick(e) {
@@ -31,14 +31,14 @@ function onclick(e) {
     feel_like.style.color = "black";
     feel.style.color = "black";
     sunrise.style.color = "black";
-   
   }
 }
 let weather = {
   apikey: "c357478e01d646558ef205232252705 ",
   baseurl: " http://api.weatherapi.com/v1",
   fetchWeather: function (city) {
-    fetch(this.baseurl + "/current.json?key=" + this.key + "&q=" + city);
+    // fetch(this.baseurl + "/current.json?key=" + this.key + "&q=" + city);
+
     // fetch(this.baseurl +"/timezone.json?key="+this.apikey+"&q="+city)
     const response = fetch(
       this.baseurl + "/current.json?key=" + this.apikey + "&q=" + city
@@ -65,29 +65,66 @@ let weather = {
     const { text } = condition;
     weather.fetchWeather(search.value);
     time.innerText = localtime.slice(10);
-    day.innerText = localtime.slice(0,10);
+    day.innerText = localtime.slice(0, 10);
     athons.innerText = name;
     feel_like.innerText = temp_c + "°C";
     feel.innerText = "Feels like " + feelslike_c + "°C";
     sunny.innerText = text;
     the_image.src = "https:" + icon;
-    // sunrise.innerText = "Sunrise: " 
-  document.querySelector(".hum").innerText = humidity + "%";
-  document.querySelector(".win").innerText = wind_kph + " km/h";
+    // sunrise.innerText = "Sunrise: "
+    document.querySelector(".hum").innerText = humidity + "%";
+    document.querySelector(".win").innerText = wind_kph + " km/h";
     document.querySelector(".pressure").innerText = pressure_mb + " mb";
-    document.querySelector(".uvs").innerText = uv;
+    document.querySelector(".uvs").innerText = uv + "uv";
+    document.querySelector(".image-of-hum").src = src =
+      "picture/humidity 1.png";
+    document.querySelector(".image-of-wind").src = src = "picture/wind 1.png";
+    document.querySelector(".image-of-pre").src = src =
+      "picture/pressure-white 1.png";
+
+    document.querySelector(".image-of-uv").src = src = "picture/uv-white 1.png";
+    document.querySelector(".josh").src = "picture/Sunrise.svg";
+    document.querySelector(".juda").src = "picture/sunset.svg";
     // sunrise.innerText = "Sunrise: " + sunrise.slice(11, 16);
+
     // .innerText = humidity+"%";
     // console.log(humidity)
   },
 };
+let weather2 = {
+  
+  fetchForecast: function (city) {
+   const response= fetch("https://api.weatherstack.com/forecast?access_key=64838f54048ede39091cce4a9c32b0fa&query="+city+"&forecast_day=5&hourly=1&interval=1")
+    .then((response) =>response.json())
+    .then((data) => this.displayForecast(data));
+
+  },
+  displayForecast:function(data){
+    const {date}=data.forecast;
+    const {date_epoch}=data.forecast
+    const {max_temp}=data.forecast
+    // const {condition}=data.forecastt;
+    const {icon}=data.forecast;
+  const {wind_kph} = data.forecast
+      console.log("Hello", data.forecast);
+      console.log(data.forecast)
+  }
+
+}
+
+ 
 search.addEventListener("keypress", function (event) {
-    if(search.value ===""){
-        alert("please enter a valid city name");
+  // event.preventDefault();
+  // console.log(event.key);
+  if (event.key === "Enter") {
+    if (search.value === "") {
+      alert("please enter a city name");
+      return;
+    } else {
+      weather.fetchWeather(search.value);
+      search.value = "";
     }
-    else if(event.key === "Enter"){
-        weather.fetchWeather(search.value)
-        search.value = "";
-    }
+  }
 });
-weather.fetchWeather("london")
+
+weather.fetchWeather("athens");
