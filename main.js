@@ -91,28 +91,7 @@ let weather = {
     // console.log(humidity)
   },
 };
-let weather2 = {
-  
-  fetchForecast: function (city) {
-   const response= fetch("https://api.weatherstack.com/forecast?access_key=64838f54048ede39091cce4a9c32b0fa&query="+city+"&forecast_day=5&hourly=1&interval=1")
-    .then((response) =>response.json())
-    .then((data) => this.displayForecast(data));
 
-  },
-  displayForecast:function(data){
-    const {date}=data.forecast;
-    const {date_epoch}=data.forecast
-    const {max_temp}=data.forecast
-    // const {condition}=data.forecastt;
-    const {icon}=data.forecast;
-  const {wind_kph} = data.forecast
-      console.log("Hello", data.forecast);
-      console.log(data.forecast)
-  }
-
-}
-
- 
 search.addEventListener("keypress", function (event) {
   // event.preventDefault();
   // console.log(event.key);
@@ -126,5 +105,4 @@ search.addEventListener("keypress", function (event) {
     }
   }
 });
-
 weather.fetchWeather("athens");
